@@ -255,3 +255,18 @@ def product(lst):
     for el in lst:
         prod *= el
     return prod
+
+def tupleToString(tup):
+    string = ''
+    for i in range(len(tup)):
+        if i == len(tup)-1:
+            string += tup[i]
+        else:
+            string += (tup[i]+' ')
+    return string
+
+def makeString(ls):
+    r = ""
+    for el in ls:
+        r += str(el)
+    return r
